@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: bisque;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.display-count {
+  margin: 0;
+  font-size: 8em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #4caf50; /* Green */
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5em;
+  color: white;
+  padding: 15px 32px;
+  margin: 0px 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.decrease {
+  background-color: red;
+}
+
+.reset {
+  background-color: black;
+}
+
+.increase {
+  background-color: green;
+}
