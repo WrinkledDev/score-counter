@@ -12,13 +12,13 @@
   resetCountBtn.addEventListener('click', () => displayCount("resetCount"));
   increaseCountBtn.addEventListener('click', () => displayCount("increaseCount"));
 
+  let count = 0;
   // EVENT HANDLERS
   function displayCount(arg){
-    let count = 0;
-    count += arg === "decreaseCount" ? -1 : arg === "increaseCount" ? 1 : 0
+    count = arg === "decreaseCount" ? count -1 : arg === "increaseCount" ? count + 1 : 0
     let color = count < 0 ? "red" : count > 0 ? "green" : "black";
-    displayCountSpace.innerHTML = count;
     displayCountSpace.style.color = color;
+    displayCountSpace.innerHTML = count;
   }
 
 })()
